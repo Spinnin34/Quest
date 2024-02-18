@@ -1,0 +1,29 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 1152
+    block: "SPRUCE_LEAVES"
+display:
+  name: "&e&nMisiones extremas:&r &e#17"
+  lore-normal:
+  - "&7Estas misiones requerirán que obtengas mucho"
+  - "&7de recursos antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Break 18 stacks of spruce leaves."
+  - "&6◆ &eProgreso:&r &7{mining:progress}/1152 spruce leaves."
+  - "&6◆ &ePremio:&r &a$20,000"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) &Has comenzado esta búsqueda."
+  type: "SPRUCE_LEAVES"
+rewards:
+  - "eco give {player} 20000"
+options:
+  category: "extreme"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 17

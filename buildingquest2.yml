@@ -1,0 +1,35 @@
+tasks:
+  obsidian:
+    type: "blockplacecertain"
+    amount: 128
+    block: "OBSIDIAN"
+  slabs:
+    type: "blockplacecertain"
+    amount: 3
+    block: "STONE_SLAB"
+display:
+  name: "&9&nMisiones de construcción:&r &e#2"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build a small base."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{obsidian:progress}/128 obsidian"
+  - "        &6◆ &7{slabs:progress}/64 stone slabs"
+  - "&6◆ &ePremio:&r &a1,000 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "OBSIDIAN"
+rewards:
+  - "eco give {player} 1000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 2

@@ -1,0 +1,34 @@
+tasks:
+  slabs:
+    type: "blockplacecertain"
+    amount: 65
+    block: "OAK_SLAB"
+  logs:
+    type: "blockplacecertain"
+    amount: 12
+    block: "OAK_LOG"
+display:
+  name: "&9&nMisiones de construcción:&r &e#4"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build a small dock."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{slabs:progress}/65 oak slabs"
+  - "        &6◆ &7{logs:progress}/12 oak logs"
+  - "&6◆ &ePremio:&r &a1,000 $"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "OAK_LOG"
+rewards:
+  - "eco give {player} 1000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 4

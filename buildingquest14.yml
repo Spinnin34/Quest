@@ -1,0 +1,35 @@
+tasks:
+  beacon:
+    type: "blockplacecertain"
+    amount: 1
+    block: "BEACON"
+  gold_blocks:
+    type: "blockplacecertain"
+    amount: 9
+    block: "GOLD_BLOCK"
+display:
+  name: "&9&nMisiones de construcción:&r &e#14"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build a basic beacon."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{beacon:progress}/1 beacon."
+  - "        &6◆ &7{gold_blocks:progress}/9 gold blocks."
+  - "&6◆ &ePremio:&r &a500 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "BEACON"
+rewards:
+  - "eco give {player} 500"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 14

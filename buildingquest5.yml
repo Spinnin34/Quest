@@ -1,0 +1,40 @@
+tasks:
+  rails:
+    type: "blockplacecertain"
+    amount: 150
+    block: "RAIL"
+  prails:
+    type: "blockplacecertain"
+    amount: 50
+    block: "POWERED_RAIL"
+  redstoneblock:
+    type: "blockplacecertain"
+    amount: 50
+    block: "REDSTONE_BLOCK"
+display:
+  name: "&9&nMisiones de construcción:&r &e#5"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build a railway system."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{rails:progress}/150 rails"
+  - "        &6◆ &7{prails:progress}/50 powered rails"
+  - "        &6◆ &7{redstoneblock:progress}/50 redstone blocks"
+  - "&6◆ &ePremio:&r &a2,000 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "RAIL"
+rewards:
+  - "eco give {player} 2000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880   
+  sort-order: 5

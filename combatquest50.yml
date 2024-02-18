@@ -1,0 +1,28 @@
+tasks:
+  damage:
+    type: "dealdamage"
+    amount: 200
+display:
+  name: "&c&nMisiones de combate:&r &e#50"
+  lore-normal:
+  - "&7Estas misiones requerirán que mates ciertos"
+  - "&7entidades antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Deal 100 hearts of damage."
+  - "&6◆ &eProgreso:&r &7{damage:progress}/200 health points."
+  - "&6◆ &ePremio:&r &a600 experience"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "DIAMOND_SWORD"
+rewards:
+  - "xp give {player} 600"
+options:
+  category: "combat"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 50

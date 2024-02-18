@@ -1,0 +1,28 @@
+tasks:
+  taming:
+    type: "taming"
+    amount: 50 
+display:
+  name: "&3&nMisiones de animales:&r &e#9"
+  lore-normal:
+  - "&7Esta mision requerirá hacer algo"
+  - "&7con animales antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Tame 50 mobs."
+  - "&6◆ &eProgreso:&r &7{shearing:progress}/50 mobs."
+  - "&6◆ &ePremio:&r &a1,000 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "BONE"
+rewards:
+  - "eco give {player} 1000"
+options:
+  category: "animal"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 9

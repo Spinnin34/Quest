@@ -1,0 +1,30 @@
+tasks:
+  degg:
+    type: "blockplacecertain"
+    amount: 1
+    block: "DRAGON_EGG"
+display:
+  name: "&9&nMisiones de construcción:&r &e#13"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Place the dragon egg."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{degg:progress}/1 dragon egg."
+  - "&6◆ &ePremio:&r &a2,000 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "DRAGON_EGG"
+rewards:
+  - "eco give {player} 2000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 13

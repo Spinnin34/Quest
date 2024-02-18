@@ -1,0 +1,28 @@
+tasks:
+  shearing:
+    type: "shearing"
+    amount: 50 
+display:
+  name: "&3&nMisiones de animales:&r &e#6"
+  lore-normal:
+  - "&7Esta mision requerirá hacer algo"
+  - "&7con animales antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Shear 50 sheep."
+  - "&6◆ &eProgreso:&r &7{shearing:progress}/50 sheep."
+  - "&6◆ &ePremio:&r &a750 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "SHEARS"
+rewards:
+  - "eco give {player} 750"
+options:
+  category: "animal"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 6

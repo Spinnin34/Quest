@@ -1,0 +1,35 @@
+tasks:
+  books:
+    type: "blockplacecertain"
+    amount: 16
+    block: "BOOKSHELF"
+  etable:
+    type: "blockplacecertain"
+    amount: 1
+    block: "ENCHANTMENT_TABLE"
+display:
+  name: "&9&nMisiones de construcción:&r &e#11"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build an enchanting station."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{books:progress}/16 bookshelves"
+  - "        &6◆ &7{etable:progress}/1 enchantment table"
+  - "&6◆ &ePremio:&r &a200 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "BOOK"
+rewards:
+  - "eco give {player} 200"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 11

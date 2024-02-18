@@ -1,0 +1,35 @@
+tasks:
+  iron:
+    type: "blockplacecertain"
+    amount: 4
+    block: "IRON_BLOCK"
+  pumpkin:
+    type: "blockplacecertain"
+    amount: 1
+    block: "PUMPKIN"
+display:
+  name: "&9&nMisiones de construcción:&r &e#7"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Summon an iron golem."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{iron:progress}/4 iron blocks"
+  - "        &6◆ &7{pumpkin:progress}/1 pumpkin"
+  - "&6◆ &ePremio:&r &a300 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "IRON_BLOCK"
+rewards:
+  - "eco give {player} 300"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 7

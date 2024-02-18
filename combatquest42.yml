@@ -1,0 +1,28 @@
+tasks:
+  killing:
+    type: "mobkillingcertain"
+    amount: 100
+    mob: PIG
+display:
+  name: "&c&nMisiones de combate:&r &e#42"
+  lore-normal:
+  - "&7Estas misiones requerirán que mates ciertos"
+  - "&7entidades antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Kill 100 pigs."
+  - "&6◆ &eProgreso:&r &7{killing:progress}/100 pigs."
+  - "&6◆ &ePremio:&r &a48x Exp Bottles"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "PORKCHOP"
+rewards:
+  - "give {player} EXPERIENCE_BOTTLE 48"
+options:
+  category: "combat"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 42

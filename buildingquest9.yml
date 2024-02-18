@@ -1,0 +1,35 @@
+tasks:
+  cobble:
+    type: "blockplacecertain"
+    amount: 500
+    block: "COBBLESTONE"
+  stairs:
+    type: "blockplacecertain"
+    amount: 100
+    block: "COBBLESTONE_STAIRS"
+display:
+  name: "&9&nMisiones de construcción:&r &e#9"
+  lore-normal:
+  - "&7This quest will require to build a"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build a small castle."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{cobble:progress}/500 cobblestone"
+  - "        &6◆ &7{stairs:progress}/100 cobblestone stairs"
+  - "&6◆ &ePremio:&r &a1,000 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "COBBLESTONE"
+rewards:
+  - "eco give {player} 1000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 9

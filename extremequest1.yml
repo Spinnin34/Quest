@@ -1,0 +1,29 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 1152
+    block: "SUGAR_CANE"
+display:
+  name: "&e&nMisiones extremas:&r &e#1"
+  lore-normal:
+  - "&7Estas misiones requerirán que obtengas mucho"
+  - "&7de recursos antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Break 18 stacks of sugar cane."
+  - "&6◆ &eProgreso:&r &7{mining:progress}/1152 sugar cane."
+  - "&6◆ &ePremio:&r &a$20,000"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado esta búsqueda."
+  type: "SUGAR_CANE"
+rewards:
+  - "eco give {player} 20000"
+options:
+  category: "extreme"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 1

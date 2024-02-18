@@ -1,0 +1,30 @@
+tasks:
+  glass:
+    type: "blockplacecertain"
+    amount: 512
+    block: "GLASS"
+display:
+  name: "&9&nMisiones de construcción:&r &e#12"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build a skyscraper :D."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{glass:progress}/512 glass blocks."
+  - "&6◆ &ePremio:&r &a2,000 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "GLASS"
+rewards:
+  - "eco give {player} 2000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 12

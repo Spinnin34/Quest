@@ -1,0 +1,40 @@
+tasks:
+  walls:
+    type: "blockplacecertain"
+    amount: 2
+    block: "COBBLESTONE_WALL"
+  fence:
+    type: "blockplacecertain"
+    amount: 1
+    block: "OAK_FENCE"
+  torch:
+    type: "blockplacecertain"
+    amount: 1
+    block: "TORCH"
+display:
+  name: "&9&nMisiones de construcción:&r &e#6"
+  lore-normal:
+  - "&7Esta mision requerirá construir un"
+  - "&7estructura antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Build a street light."
+  - "&6◆ &eProgreso:&r"
+  - "        &6◆ &7{walls:progress}/2 walls"
+  - "        &6◆ &7{fence:progress}/1 oak fence"
+  - "        &6◆ &7{torch:progress}/1 torch"
+  - "&6◆ &ePremio:&r &a100 $"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "TORCH"
+rewards:
+  - "eco give {player} 100"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 6

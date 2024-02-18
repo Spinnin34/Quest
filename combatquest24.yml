@@ -1,0 +1,29 @@
+tasks:
+  killing:
+    type: "mobkillingcertain"
+    amount: 500
+    mob: CREEPER
+display:
+  name: "&c&nMisiones de combate:&r &e#24"
+  lore-normal:
+  - "&7Estas misiones requerirán que mates ciertos"
+  - "&7entidades antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Kill 500 creepers."
+  - "&6◆ &eProgreso:&r &7{killing:progress}/500 creepers."
+  - "&6◆ &ePremio:&r &a128x Exp Bottles"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "GUNPOWDER"
+rewards:
+  - "give {player} EXPERIENCE_BOTTLE 128"
+options:
+  category: "combat"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 24

@@ -1,0 +1,28 @@
+tasks:
+  killing:
+    type: "playerkilling"
+    amount: 50
+display:
+  name: "&c&nMisiones de combate:&r &e#3"
+  lore-normal:
+  - "&7Estas misiones requerirán que mates ciertos"
+  - "&7entidades antes de recibir la recompensa."
+  - "&r"
+  - "&6◆ &eObjetivo:&r &7Kill 50 players."
+  - "&6◆ &eProgreso:&r &7{killing:progress}/50 players."
+  - "&6◆ &ePremio:&r &aSharpness V Book"
+  - "&r"
+  - "&7©Spinnin34"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) Has comenzado estas misiones."
+  type: "IRON_SWORD"
+rewards:
+  - "give {player} minecraft:enchanted_book 1 0 {StoredEnchantments:[{id:16,lvl:5}]}"
+options:
+  category: "combat"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 3
